@@ -1,13 +1,13 @@
 ---
 name: shownotes
-description: Generate podcast show notes, episode descriptions, chapter timestamps, takeaways, quotes, and platform-specific promo copy from a transcript or subtitle file. Use when the user wants website show notes, Apple Podcasts descriptions, YouTube descriptions, newsletter blurbs, or social copy derived from podcast audio, transcripts, SRT, VTT, or speaker-labeled text.
+description: Generate podcast show notes, episode descriptions, chapter timestamps, takeaways, quotes, and platform-specific promo copy from a transcript or subtitle file. Use when an AI assistant such as Claude, Gemini, or Codex needs to turn podcast audio, transcripts, SRT, VTT, or speaker-labeled text into website show notes, Apple Podcasts descriptions, YouTube descriptions, newsletter blurbs, or social copy.
 ---
 
 # Shownotes
 
 ## Overview
 
-Use this skill when the user wants a podcast transcript turned into a clean, reviewable content package instead of a single generic summary. The skill is optimized for multi-output publishing: website show notes, Apple Podcasts, YouTube, newsletter, and social variants.
+Use this skill when the user wants a podcast transcript turned into a clean, reviewable content package instead of a single generic summary. The workflow is model-agnostic and works as a Claude Skill, a Codex skill, or the instruction basis for a Gemini Gem. It is optimized for multi-output publishing: website show notes, Apple Podcasts, YouTube, newsletter, and social variants.
 
 Read [references/output-schema.md](references/output-schema.md) when you need the full field list, destination-specific templates, or the human review checklist.
 
@@ -97,6 +97,7 @@ The goal is not full autonomy. The goal is to compress production into a fast ed
 - Attribute quotes to a speaker when possible
 - Separate assumptions and review flags from final copy
 - If the transcript quality is poor, say so briefly and note where that may affect timestamps or summaries
+- Do not mention Claude, Gemini, Codex, or the skill mechanics in final user-facing copy unless the user asks
 
 ## Default Deliverable Shape
 
